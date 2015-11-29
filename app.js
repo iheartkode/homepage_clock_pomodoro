@@ -13,8 +13,8 @@ function notifyMeWork() {
   if (Notification.permission !== "granted")
     Notification.requestPermission();
   else {
-    var notification = new Notification('Working', {
-      body: "Hey there! You have worked 25 minutes",
+    var notification = new Notification('Work', {
+      body: "Hey there! You have worked 25 minutes!",
     });
 
   }
@@ -40,17 +40,20 @@ function notifyMeBreak() {
 
 }
 
-
-
-
+// update the time
 function updateTime() {
        var now = moment()
-      $("#time").text(now.hours() % 12 + ":" + now.minutes());
+
+      $("#time").text(now.hour() % 12 + ":" + now.minute());
 }
 
+
+
+//everysecond update time
 setInterval(function(){
     updateTime();
 }, 1000);
+
 
 function work() {
   $("#output").text("Timer is set for  25 Minutes, time to work!");
@@ -59,7 +62,7 @@ function work() {
     var audio = new Audio('work.mp3');
     audio.play();
 
-  }, 1500000)
+  }, 1500000) 
 }
 
 function breakTime() {

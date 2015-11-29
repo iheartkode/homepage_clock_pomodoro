@@ -40,3 +40,9 @@ body {
   padding: 10px;
   border-radius:6px;
 }
+
+
+#notifs {
+  color: white;
+  text-align: left;
+}
