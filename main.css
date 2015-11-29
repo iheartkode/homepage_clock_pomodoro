@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+body {
+  background: #222;
+}
+
+#time {
+  text-align: center;
+  color: #16A8C7;
+  font-family: 'Inconsolata',monospace;
+  font-size: 9em;
+}
+
+#timer {
+  color: white;
+}
+
+
+#pomodoro {
+  text-align: center;
+}
+
+#output {
+  text-align: center;
+  color: white;
+}
+
+#work {
+  background: #96E072  ;
+  border: 0px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius:6px;
+}
+
+#break {
+  background: #96E072;
+  border: 0px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius:6px;
+}
