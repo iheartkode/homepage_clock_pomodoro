@@ -59,7 +59,7 @@ function work() {
     var audio = new Audio('work.mp3');
     audio.play();
 
-  }, 10000) // 1500000
+  }, 1500000)
 }
 
 function breakTime() {
