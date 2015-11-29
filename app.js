@@ -1,3 +1,6 @@
+
+
+
 // request permission on page load
 document.addEventListener('DOMContentLoaded', function () {
   if (Notification.permission !== "granted")
@@ -39,8 +42,10 @@ function notifyMeBreak() {
   }
 
 }
+
 $("#time").text(moment().format("h:mm:ss a"));
 $(document).ready(function() {
+
   setInterval(function(){
         $("#time").text(moment().format("h:mm:ss a"));
   }, 1000);

@@ -45,13 +45,27 @@ body {
 }
 
 h1 {
-  font-family: Roboto,serif;
   text-align: center;
   color: white;
 
 }
 
-#notifs {
+h3 {
   color: white;
-  text-align: left;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  color: white;
+  background: #333;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.links {
+  font-size: 20px;
+  text-align: center;
+
 }
