@@ -27,7 +27,7 @@ function notifyMeWork() {
 }
 
 
-notifyMeWork();
+
 
 function updateTime() {
        var now = moment()
@@ -41,6 +41,7 @@ setInterval(function(){
 function work() {
   $("#output").text("Timer is set for  25 Minutes, time to work!");
   setTimeout(function() {
+    notifyMeWork();
     var audio = new Audio('work.mp3');
     audio.play();
 
