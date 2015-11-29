@@ -39,10 +39,13 @@ function notifyMeBreak() {
   }
 
 }
+$("#time").text(moment().format("h:mm:ss a"));
+$(document).ready(function() {
+  setInterval(function(){
+        $("#time").text(moment().format("h:mm:ss a"));
+  }, 1000);
 
-setInterval(function(){
-      $("#time").text(moment().format("h:mm:ss a"));
-}, 1000);
+});
 
 
 function work() {
