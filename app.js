@@ -1,6 +1,3 @@
-
-
-
 // request permission on page load
 document.addEventListener('DOMContentLoaded', function () {
   if (Notification.permission !== "granted")
@@ -51,7 +48,6 @@ $(document).ready(function() {
   }, 1000);
 
 });
-
 
 function work() {
   $("#output").text("Timer is set for  25 Minutes, time to work!");
