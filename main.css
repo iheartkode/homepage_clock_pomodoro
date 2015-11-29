@@ -1,14 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto);
 
 body {
   background: #222;
+  font-family: Open Sans, serif;
 }
 
 #time {
   text-align: center;
   color: #16A8C7;
   font-family: 'Inconsolata',monospace;
-  font-size: 9em;
+  font-size: 6em;
+  padding: 0px;
 }
 
 #timer {
@@ -23,10 +25,11 @@ body {
 #output {
   text-align: center;
   color: white;
+  font-size: 20px;
 }
 
 #work {
-  background: #96E072  ;
+  background: #9BF59F  ;
   border: 0px;
   font-size: 18px;
   padding: 10px;
@@ -34,13 +37,19 @@ body {
 }
 
 #break {
-  background: #96E072;
+  background: #CEF59B;
   border: 0px;
   font-size: 18px;
   padding: 10px;
   border-radius:6px;
 }
 
+h1 {
+  font-family: Roboto,serif;
+  text-align: center;
+  color: white;
+
+}
 
 #notifs {
   color: white;

@@ -40,18 +40,8 @@ function notifyMeBreak() {
 
 }
 
-// update the time
-function updateTime() {
-       var now = moment()
-
-      $("#time").text(now.hour() % 12 + ":" + now.minute());
-}
-
-
-
-//everysecond update time
 setInterval(function(){
-    updateTime();
+      $("#time").text(moment().format("h:mm:ss a"));
 }, 1000);
 
 
@@ -62,7 +52,7 @@ function work() {
     var audio = new Audio('work.mp3');
     audio.play();
 
-  }, 1500000) 
+  }, 1500000)
 }
 
 function breakTime() {
