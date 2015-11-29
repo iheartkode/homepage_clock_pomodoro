@@ -2,18 +2,31 @@
 <html>
   <head>
     <title>Clock</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
   </head>
   <body>
-   <div class="col m12 ">
-          <ul class="links">
-            <li><a href="http://www.gitter.im/freecodecamp/freecodecamp">Gitter</a></li>
-            <li><a href="http://www.twitter.com/iheartkode">Twitter</a> </li>
-            <li><a href="http://www.facebook.com">Facebook</a> </li>
-          </ul>
+            <nav>
+              <div class="nav-wrapper">
+                <a href="#" class="brand-logo right"></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                  <li><a href="http://www.gitter.im/freecodecamp/freecodecamp"><i class="fa fa-comment"></i></a></li>
+                  <li><a href="http://www.twitter.com"><i class="fa fa-twitter-square"></i></a> </li>
+                  <li><a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a></li>
+                  <li><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+                  <li><a href="http://devdocs.io/"><i class="fa fa-file-code-o"></i></a></li>
+                </ul>
+              </div>
+            </nav>
 
-           <p id="time"></p>
+              <div class="icons">
+             <i class="fa fa-question-circle" id="question"></i>
+          </div>
+            <p id="time"></p>
            <h3>Pomodoro</h3>
            <hr>
 
@@ -22,11 +35,20 @@
            </p>
 
            <div id="pomodoro">
-             <button id="work">Work</button>
-             <button id=break>Break</button>
+             <button id="work" class="waves-effect waves-light btn">Work</button>
+             <button id=break class="waves-effect waves-light btn">Break</button>
            </div>
-   </div>
-    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+           <!-- Modal Structure -->
+             <div id="modal" class="modal bottom-sheet">
+               <div class="modal-content">
+                 <h4>What is this page?</h4>
+                 <p>This is a new tab page I made for personal use, the pomodoro utilizes notifications and will play audio when finished.</p>
+                 <p>It was created with JavaScript, jQuery, and MaterializeCSS</p>
+               </div>
+               <div class="modal-footer">
+                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+               </div>
+             </div>
     <script src="moment.js"></script>
     <script src="app.js"></script>
   </body>

@@ -43,6 +43,11 @@ function notifyMeBreak() {
 $("#time").text(moment().format("h:mm:ss a"));
 $(document).ready(function() {
 
+  $("#question").on("click", function() {
+    $('#modal').openModal();
+
+  })
+
   setInterval(function(){
         $("#time").text(moment().format("h:mm:ss a"));
   }, 1000);

@@ -1,21 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto);
 
 body {
-  background: #222;
+  background: white;
   font-family: Open Sans, serif;
 }
 
 #time {
   text-align: center;
-  color: #16A8C7;
+
   font-family: 'Inconsolata',monospace;
   font-size: 6em;
   padding: 0px;
 }
 
-#timer {
-  color: white;
-}
+
 
 
 #pomodoro {
@@ -24,11 +22,10 @@ body {
 
 #output {
   text-align: center;
-  color: white;
   font-size: 20px;
 }
 
-#work {
+/*#work {
   background: #9BF59F  ;
   border: 0px;
   font-size: 18px;
@@ -42,30 +39,41 @@ body {
   font-size: 18px;
   padding: 10px;
   border-radius:6px;
-}
+}*/
 
 h1 {
   text-align: center;
-  color: white;
-
+  
 }
 
 h3 {
-  color: white;
+
   text-align: center;
 }
 
 li {
-  display: inline-block;
+  /*display: inline-block;
   list-style: none;
   color: white;
   background: #333;
   padding: 5px;
   border-radius: 5px;
-  font-weight: bolder;
+  font-weight: bolder;*/
 }
 .links {
   font-size: 20px;
   text-align: center;
+
+}
+
+.fa {
+  color: white;
+  font-size: 50px;
+}
+
+.icons {
+  position: absolute;
+  right: 10px;
+  top: 5px;
 
 }
