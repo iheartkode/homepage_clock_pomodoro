@@ -13,7 +13,7 @@ function work() {
     var audio = new Audio('work.mp3');
     audio.play();
     $("#output").text("You worked 25 Minutes!!");
-  }, 2000) //1500000
+  }, 1500000) 
 }
 
 function breakTime() {
@@ -22,7 +22,7 @@ function breakTime() {
     var audio = new Audio('break.mp3');
     audio.play();
       $("#output").text("Your break is over, get to work!");
-  }, 2000) // 300000
+  }, 300000)
 }
 
 
